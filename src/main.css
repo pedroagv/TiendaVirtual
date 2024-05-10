@@ -33,7 +33,7 @@
 
 .logo {
     text-decoration: none;
-    color: black;
+    color: var(--clr-main-light);
 }
 
 .menu {
