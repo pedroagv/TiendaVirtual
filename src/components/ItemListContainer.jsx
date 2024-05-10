@@ -8,7 +8,7 @@ const ItemListContainer = () => {
 
     const [productos, setProductos] = useState([]);
 
-    const [titulo] = useState("Productos");
+    const [titulo, setTitulo] = useState("Productos");
 
     const categoria = useParams().categoria;
 
@@ -16,6 +16,8 @@ const ItemListContainer = () => {
 
       const productosRef = collection(db, "productos");
       const q = categoria ? query(productosRef, where("categoria", "==", categoria)) : productosRef;
+
+      categoria ? setTitulo(categoria): setTitulo("Productos");
 
       getDocs(q)
         .then((resp) => {
