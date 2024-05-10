@@ -21,7 +21,6 @@ function AddProduct() {
         <div className="container">
             <h1 className="main-title">Creacion Productos</h1>
             <form className="formulario" onSubmit={handleSubmit(crearproducto)}>
-
                 <input type="text" placeholder="Ingresá el titulo del producto" {...register("titulo")} />
                 <input type="text" placeholder="Ingresá la descripción del producto" {...register("descripcion")} />
                 <input type="text" placeholder="Ingresá la categoria del producto" {...register("categoria")} />
