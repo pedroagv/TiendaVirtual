@@ -8,7 +8,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import Carrito from "./components/Carrito";
 import Checkout from "./components/Checkout";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
+import AddProduct from "./components/AddProduct";
 
 function App() {
   return (
@@ -27,9 +28,10 @@ function App() {
             <Route path="/contacto" element={<Contacto />}/>
             <Route path="/carrito" element={<Carrito />}/>
             <Route path="/checkout" element={<Checkout />}/>
+            <Route path="/addproduct" element={<AddProduct />}/>
           </Routes>
           
-          <Footer />
+          {/* <Footer /> */}
         </BrowserRouter>
       </CartProvider>
     </div>
