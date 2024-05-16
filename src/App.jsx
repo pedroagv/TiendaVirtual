@@ -1,17 +1,16 @@
 import Contacto from "./components/Contacto";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import ItemListContainer from "./components/ItemListContainer";
-// import Navbar from "./components/Navbar";
 import Nosotros from "./components/Nosotros";
-import "./main.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import Carrito from "./components/Carrito";
 import Checkout from "./components/Checkout";
-// import Footer from "./components/Footer";
 import AddProduct from "./components/AddProduct";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from "./components/Header/NavBar";
+import Landing from "./components/Landing/Landing";
+import "./main.css";
 
 function App() {
 
@@ -22,7 +21,7 @@ function App() {
         <BrowserRouter>
           <NavBar />
           <Routes>
-            <Route path="/" element={<ItemListContainer />} />
+            <Route path="/" element={<Landing />} />
             <Route path="/item/:id" element={<ItemDetailContainer />} />
             <Route path="/productos" element={<ItemListContainer />} />
             <Route path="/productos/:categoria" element={<ItemListContainer />} />
@@ -32,7 +31,7 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/addproduct" element={<AddProduct />} />
           </Routes>
-
+          
           {/* <Footer /> */}
         </BrowserRouter>
       </CartProvider>

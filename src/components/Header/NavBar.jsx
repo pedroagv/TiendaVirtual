@@ -1,36 +1,49 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import CartWidget from '../CartWidget';
+
 
 function NavBar() {
     return (
-        <nav className="navbar navbar-light navbar-expand-sm bg-rosa">
+        <Navbar bg="rosa" expand="lg" variant="light">
             <div className="container-fluid">
-                <Link className="navbar-brand text-white" to="/">
-                    <img src={logo} alt="Logo" width="30" height="24" className="navvar-logo  d-inline-block align-text-top" />                    
-                </Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="mynavbar">
-                    <ul className="navbar-nav me-auto">
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/productos">Productos</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/productos/cumpleaños">Cumpleaños</Link>
-                        </li>
-                        <li className="nav-item">
-                        <Link className="nav-link" to="/productos/madres">Dia Madres ❤️</Link>
-                        </li>
-                    </ul>
-                    <form className="d-flex">
-                        <input className="form-control form-sm me-2" type="text" placeholder="Search" />
-                        <button className="btn btn-sm bg-rosa-second" type="button">Search</button>
-                    </form>
-                </div>
+                <Navbar.Brand as={Link} to="/" className="text-white">
+                    <img
+                        src={logo}
+                        alt="Logo"
+                    />
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="mynavbar" />
+                <Navbar.Collapse id="mynavbar" className="justify-content-center">
+                    <Nav>
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/"><b>Dsorpresas360</b></Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/productos">🎈PRODUCTOS</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/productos/madres">🤱DIA MADRES</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/productos/cumpleaños">🎉CUMPLEAÑOS</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/productos/especial">🤩ESPECIALES</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/productos/especial">😊OFERTAS</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <CartWidget />
+                        </Nav.Item>
+                    </Nav>
+                </Navbar.Collapse>
             </div>
-        </nav>
+        </Navbar>
     );
 }
 
