@@ -6,7 +6,7 @@ function CarouselVariable() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://image.slidesdocs.com/responsive-images/background/balloons-laying-in-pink-on-a-wall-powerpoint-background_f819c1bdf3__960_540.jpg"
+          src="https://image.slidesdocs.com/responsive-images/background/animated-birthday-decoration-animation-stock-video-footage-with-many-balloons-powerpoint-background_aa3aa47419__960_540.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -17,7 +17,7 @@ function CarouselVariable() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://image.slidesdocs.com/responsive-images/background/some-colorful-balloons-on-a-green-backdrop-powerpoint-background_eaa0fc4218__960_540.jpg"
+          src="https://image.slidesdocs.com/responsive-images/background/interior-d%C3%A9cor-arch-balloons-present-box-and-podium-on-display-in-a-3d-rendered-wall-scene-powerpoint-background_850f8c3d30__960_540.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -28,7 +28,7 @@ function CarouselVariable() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://www.shutterstock.com/image-illustration/children-slide-balloons-among-colorful-600nw-1159485991.jpg"
+          src="https://image.slidesdocs.com/responsive-images/background/welcome-to-the-party-blue-themed-3d-rendering-of-birthday-decorations-on-wall-with-balloons-and-gifts-powerpoint-background_a59d2a2a15__960_540.jpg"
           alt="Third slide"
         />
         <Carousel.Caption>

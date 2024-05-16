@@ -40,3 +40,7 @@
 .card-img-top{
     max-height: 15rem;
 }
+
+.carousel-caption{
+    background-color: #f237ff73;
+}
