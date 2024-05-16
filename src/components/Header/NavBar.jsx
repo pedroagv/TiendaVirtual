@@ -29,10 +29,10 @@ function NavBar() {
                             <Nav.Link as={Link} to="/productos/madres">🤱DIA MADRES</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/productos/cumpleaños">🎉CUMPLEAÑOS</Nav.Link>
+                            <Nav.Link as={Link} to="/productos/cumpleaños">🎉DESAYUNOS</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/productos/especial">🤩ESPECIALES</Nav.Link>
+                            <Nav.Link as={Link} to="/productos/especial">🤩CUMPLEAÑOS</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link as={Link} to="/productos/especial">😊OFERTAS</Nav.Link>
